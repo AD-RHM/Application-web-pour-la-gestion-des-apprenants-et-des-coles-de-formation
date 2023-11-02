@@ -1,0 +1,386 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+    background-image: linear-gradient(to right,#59c17344,#a17fe063,#5c26c16b ),url(back.jpg);
+    background-size: cover;
+    background-position: canter;
+    font-family: sans-serif;
+    height: 663px;
+  
+}
+
+.menu-bar
+{
+    background-color: rgba(88, 86, 86, 0.6);
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: rgba(250, 249, 249, 1);
+}
+.menu-bar ul li
+{
+    width: 250px;
+    margin: 10px;
+    padding: 7px;
+}
+
+
+img
+{
+    
+    margin: 10px;
+    width: 200px;
+    float: left;
+}
+
+
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.menu-bar ul li:hover
+{
+    
+    background: rgba(18, 1, 29, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.act label:hover
+{
+    font-size: 18px;
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-bar .fas
+{
+    margin: 10px;
+}
+.menu-bar .fab
+{
+    margin: 10px;
+}
+.sub-list-1 
+{
+    display: none;
+}
+.sub-list-2
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-list-1
+{
+    display: block;
+    position: absolute;
+    background: rgba(18, 1, 29, 0.3);
+    margin-top: 10px;
+    margin-left: -10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.menu-bar ul li:hover .sub-list-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-list-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-list-1 ul li :last-child
+{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-list-2
+{
+    display: block;
+    position: absolute;
+    background: rgba(18, 1, 29, 0.3);
+    margin-top: 10px;
+    margin-left: -10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.menu-bar ul li:hover .sub-list-2 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-list-2 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 0.1px dotted #fff;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-list-2 ul li :last-child
+{
+    border-bottom: none;
+}
+.fa-angle-right
+{
+    float: right;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+
+
+
+.btn{
+    border: 1px solid #708B75;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin: 20px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .btn2 label,.btn1 label ,.btn3 label {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn2 label:hover,.btn1 label:hover,.btn3 label:hover{
+    color: #3b436e;
+  }
+  .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #543999;
+    z-index: -1;
+    transition: 0.8s;
+  }
+
+  .btn2::before,.btn1::before,.btn3::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  .btn2::before,.btn1::before,.btn3::before{
+    height: 180%;
+  }
+
+  .btn2:hover::before,.btn1:hover::before,.btn3:hover::before{
+    height: 0%;
+  }
+
+
+  
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+  position: absolute;
+  top: 22%;
+  left: 16%;
+  transform: translate(-70%, -70%);
+  background-color: rgba(88, 86, 86, 0.397);
+  width: 300px;
+  line-height: 50px;
+  padding: 8px 25px;
+  border-radius: 5px;
+}
+nav label{
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+}
+.button span{
+  float: right;
+  line-height: 40px;
+  transition: 0.5s;
+}
+.button span.rotate{
+  transform: rotate(-180deg);
+}
+nav ul{
+  position: absolute;
+  background-color: rgba(88, 86, 86, 0.397);
+  list-style: none;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+}
+[id^=btn]:checked + ul{
+  display: block;
+}
+nav .menu:before{
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background: hsla(0, 0%, 11%, 0);
+  right: 20px;
+  top: -10px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+nav ul li{
+  line-height: 40px;
+  padding: 8px 20px;
+  cursor: pointer;
+  background-color: rgba(88, 86, 86, 0.397);
+}
+nav ul li label{
+  font-size: 18px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+nav ul li a:hover,
+nav ul li label:hover{
+  color: rgb(131, 189, 255);
+}
+nav ul ul{
+  position: static;
+}
+nav ul ul li{
+  line-height: 30px;
+  padding-left: 30px;
+  border-bottom: none;
+}
+nav ul ul li a{
+  color: #e6e6e6;
+  font-size: 17px;
+}
+nav ul li span{
+  font-size: 20px;
+  float: right;
+  margin-top: 10px;
+  padding: 0 10px;
+  transition: 0.5s;
+}
+nav ul li span.rotate{
+  transform: rotate(-180deg);
+}
+input{
+  display: none;
+}
+
+
+
+
+
+.table-wrapper {
+	color: #404E67;
+    font-family: 'Open Sans', sans-serif;
+    width: 1100px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;	
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    border-radius: 25px;
+}
+.table-title {
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+}
+.table-title h2 {
+    margin: 6px 0 0;
+    font-size: 22px;
+}
+.table-title .add-new {
+    float: right;
+    height: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: none;
+    min-width: 100px;
+    border-radius: 50px;
+    line-height: 13px;
+}
+.table-title .add-new i {
+    margin-right: 4px;
+}
+table.table {
+    table-layout: fixed;
+}
+table.table tr th, table.table tr td {
+    border-color: #e9e9e9;
+}
+table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+table.table th:last-child {
+    width: 100px;
+}
+table.table td a {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    min-width: 24px;
+}    
+table.table td a.add {
+    color: #27C46B;
+}
+table.table td a.edit {
+    color: #FFC107;
+}
+table.table td a.delete {
+    color: #E34724;
+}
+table.table td i {
+    font-size: 19px;
+}
+table.table td a.add i {
+    font-size: 24px;
+    margin-right: -1px;
+    position: relative;
+    top: 3px;
+}    
+table.table .form-control {
+    height: 32px;
+    line-height: 32px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+table.table .form-control.error {
+    border-color: #f50000;
+}
+table.table td .add {
+    display: none;
+}
